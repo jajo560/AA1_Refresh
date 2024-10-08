@@ -46,7 +46,8 @@ public class Targets : MonoBehaviour
 
             GameObject roto = Instantiate(targetDestruido, transform.position, Quaternion.Euler(90,0,0));
             Destroy(roto, 2.5f);
-            
+            Puntuacion.puntuacion.puntuacionGlobal += 100f;
+
             contador = 0f;
            
         }

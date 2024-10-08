@@ -25,7 +25,7 @@ public class Disparo : MonoBehaviour
             GameObject bala = Instantiate(bullet, mira.transform.position, Quaternion.Euler(90,0,0));
 
             rb = bala.GetComponent<Rigidbody>();
-            rb.AddForce(mira.transform.forward * speed, ForceMode.Impulse);  
+            rb.AddForce(mira.transform.forward * speed, ForceMode.Impulse);
 
             Destroy(bala, 3f);
         }
