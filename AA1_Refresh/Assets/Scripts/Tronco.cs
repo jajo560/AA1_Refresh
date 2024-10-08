@@ -7,7 +7,6 @@ public class Tronco : MonoBehaviour
 {
     public GameObject troncoTorreta;
     float pos_x = 0;
-    float pos_y = 0;
 
         // Start is called before the first frame update
     void Start()
@@ -20,7 +19,6 @@ public class Tronco : MonoBehaviour
     {
 
         pos_x = Input.GetAxis("Mouse X");
-        pos_y = Input.GetAxis("Mouse Y");
         troncoTorreta.transform.localEulerAngles = transform.localEulerAngles + new Vector3(0, pos_x, 0);
 
     }
